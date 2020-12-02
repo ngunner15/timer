@@ -17,6 +17,6 @@ rl.on('line', function(line){
   } 
 })
 
-  process.on('exit', () => {
+  rl.on('close', () => {
     console.log("Thanks for using me, ciao!");
   });
